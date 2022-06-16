@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: aqua;
+            display: flex;
+            place-items: center;
+            min-height: 100vh;
+        }
+        main{
+            display: grid;
+            grid-template-areas: 
+            'a a a b b'
+            'c c d d d'
+            'c c e e e';
+            margin: auto;
+            width: 70%;
+            gap: 10px;
+        }
+
+        .d1{
+            background-color: bisque;
+            grid-area: a;
+            height: 200px;
+        }
+        .d2{
+            background-color: salmon;
+            grid-area: b;
+        }
+        .d3{
+            background-color: goldenrod;
+            grid-area: c;
+            height: 200px;
+        }
+
+        .d4{
+            background-color: hotpink;
+            grid-area: d;
+        }
+        .d5{
+            background-color: bisque;
+            grid-area: e;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="d1"></div>
+        <div class="d2"></div>
+        <div class="d3"></div>
+        <div class="d4"></div>
+        <div class="d5"></div>
+    </main>
+</body>
+</html>
