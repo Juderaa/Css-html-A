@@ -16,13 +16,27 @@
             box-sizing: border-box;
         }
 
-        main {
-            width: 50%;
-            margin: auto;
+        a{
+            text-decoration:none;
+            border: black solid 2px;
+            background-color: white;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px;
+        }
+        body{
+            min-height: 100vh;
             display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        main {
+            margin: auto;
+            max-width: 1440px;
+            display: flex;
+            flex-flow: wrap;
             align-items: center;
-            /* justify-content: center; */
-            height: 100vh;
+            justify-content: center;
         }
 
         p {
@@ -46,7 +60,7 @@
         }
 
         div {
-            width: 300px;
+            max-width: 350px;
         } 
 
         .divA {
@@ -57,10 +71,11 @@
 
         .divA button {
             border: 3px solid hsla(0, 0%, 95%);
-            border-radius: 20px;
+            border-radius: 25px;
             color: hsl(31, 77%, 52%);
-            padding: 10px;
+            padding: 10px 40px;
             font-family: 'Lexend Deca', sans-serif;
+            cursor: pointer;
         }
 
         .divA button:hover {
@@ -75,10 +90,11 @@
 
         .divB button {
             border: 3px solid hsla(0, 0%, 95%);
-            border-radius: 20px;
+            border-radius: 25px;
             color: hsl(184, 100%, 22%);
-            padding: 10px;
+            padding: 10px 40px;
             font-family: 'Lexend Deca', sans-serif;
+            cursor: pointer;
         }
 
         .divB button:hover {
@@ -94,10 +110,11 @@
 
         .divC button {
             border: 3px solid hsla(0, 0%, 95%);
-            border-radius: 20px;
+            border-radius: 25px;
             color: hsl(179, 100%, 13%);
-            padding: 10px;
+            padding: 10px 40px;
             font-family: 'Lexend Deca', sans-serif;
+            cursor: pointer;
         }
 
         .divC button:hover {
@@ -109,6 +126,10 @@
 </head>
 
 <body>
+    <header></header>
+    <nav>
+        <a href="grid.html">Grid</a>
+    </nav>
     <main>
         <div class="divA">
             <img src="icon-sedans.svg" alt="sedan">

@@ -7,16 +7,30 @@
     <title>Grid</title>
     <style>
         *{
-            margin: 0;
             padding: 0;
+            margin: 0;
         }
+
         body{
-            background-color: aqua;
-            display: flex;
-            place-items: center;
-            min-height: 100vh;
+            background-color: aqua;            
+            height: 100vh;
+            margin: 30px;
         }
-        main{
+        a{
+            text-decoration:none;
+            border: black solid 2px;
+            background-color: white;
+            border-radius: 20px;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        main{                  
+            display: flex;
+            align-items: center;
+            height: 100vh;
+        }
+        #bod{
             display: grid;
             grid-template-areas: 
             'a a a b b'
@@ -50,15 +64,23 @@
             background-color: bisque;
             grid-area: e;
         }
+
     </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="index.html">Flex</a>
+        </nav>
+    </header>
     <main>
-        <div class="d1"></div>
-        <div class="d2"></div>
-        <div class="d3"></div>
-        <div class="d4"></div>
-        <div class="d5"></div>
+        <div id="bod">
+            <div class="d1"></div>
+            <div class="d2"></div>
+            <div class="d3"></div>
+            <div class="d4"></div>
+            <div class="d5"></div>
+        </div>        
     </main>
 </body>
 </html>
